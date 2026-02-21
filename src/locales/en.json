@@ -1,60 +1,133 @@
 {
     "menu": {
-        "title": "Jjan!",
+        "title": "VibeCheck",
         "subtitle": "Pick your poison.",
-        "game_31bomb": "The 31 Bomb",
-        "game_nunchitap": "Nunchi Tap",
-        "game_vibevote": "Vibe Vote",
-        "language": "Language"
+        "game_31bomb": "THE 31 BOMB",
+        "game_nunchitap": "NUNCHI TAP",
+        "game_vibevote": "VIBE VOTE",
+        "game_never_have_i_ever": "NEVER HAVE I EVER",
+        "game_kings_cup": "KING's CUP"
     },
     "common": {
         "start": "START",
         "back": "MENU",
-        "drink": "DRINK!"
-    },
-    "nunchitap": {
-        "rules": "Place phone in the center. Tap the screen in order from 1 to the number of players. If two people tap at the same time, they DRINK!",
-        "tap_to_start": "TAP TO START",
-        "game_over": "CLASH!",
-        "fail_message": "Both of you drink!",
-        "success": "SUCCESS!",
-        "success_message": "Next Round. Tap faster!"
+        "next": "NEXT",
+        "done": "DONE"
     },
     "bomb31": {
-        "rules": "Take turns tapping 1, 2, or 3 times to advance the counter. The person who taps '31' explodes and DRINKS!",
-        "current_number": "CURRENT",
+        "rules": "Count up by tapping +1, +2, or +3. The player who hits 31 loses and drinks!",
+        "current_number": "CURRENT NUMBER",
         "tap_1": "+1",
         "tap_2": "+2",
         "tap_3": "+3",
-        "end_turn": "END TURN",
         "boom": "BOOM!",
-        "fail_message": "You hit 31. Take a shot!"
+        "fail_message": "You hit 31. Drink up!"
+    },
+    "nunchitap": {
+        "rules": "Tap the screen in sequence. No talking. If two players tap at the same time, they both drink!",
+        "tap_to_start": "TAP TO START",
+        "game_over": "CLASH!",
+        "fail_message": "Double tap detected. You both drink!",
+        "success": "SAFE!",
+        "success_message": "You survived this round."
     },
     "vibevote": {
-        "rules": "Read the prompt out loud. On the count of 3, everyone points to the person who fits it best. The person with the most votes spins the consequence wheel!",
-        "next_question": "NEXT VIBE",
+        "rules": "Read the prompt. Everyone points at the person who fits it best. Spin the wheel to see the loser's consequence.",
         "spin_wheel": "SPIN THE WHEEL",
+        "next_question": "NEXT PROMPT",
         "prompts": [
-            "Who is most likely to text their ex tonight?",
             "Who has the worst taste in music?",
+            "Who is most likely to get arrested tonight?",
+            "Who sends the boldest drunk texts?",
+            "Who takes the longest to get ready?",
             "Who is the biggest lightweight?",
-            "Who would die first in a horror movie?",
-            "Who is most likely to get arrested for a stupid reason?",
-            "Who spends the most time on TikTok?",
-            "Who has the wildest dating history?",
-            "Who is the worst driver?",
-            "Who is most likely to become a millionaire by accident?",
-            "Who is the most dramatic?",
-            "Who is secretly judging everyone right now?",
-            "Who is most likely to fake sick to get out of plans?"
+            "Who is most likely to ghost a date?",
+            "Who spends the most money on stupid things?",
+            "Who would die first in a horror movie?"
         ],
         "consequences": [
-            "Take 1 Shot",
-            "Assign 2 Drinks",
-            "No phones for 10 mins",
-            "Speak in an accent",
-            "Drink water (Lucky!)",
-            "Post an ugly selfie"
+            "TAKE 2 SHOTS",
+            "FINISH YOUR DRINK",
+            "GIVE OUT 3 DRINKS",
+            "NO DRINKING FOR 1 ROUND",
+            "WATERFALL STARTS WITH YOU",
+            "POST A DUMB SELFIE",
+            "TAKE 1 SHOT WITHOUT HANDS"
         ]
+    },
+    "neverhave": {
+        "rules": "Read the prompt. If you've done it, take a drink.",
+        "next_prompt": "NEXT PROMPT",
+        "prompts": [
+            "Never have I ever ghosted someone.",
+            "Never have I ever lied about my age.",
+            "Never have I ever sent a risky text to the wrong person.",
+            "Never have I ever fake cried to get out of trouble.",
+            "Never have I ever checked my ex's social media.",
+            "Never have I ever stolen something from a hotel.",
+            "Never have I ever skipped work/class to sleep.",
+            "Never have I ever forgotten an anniversary or birthday."
+        ]
+    },
+    "kingscup": {
+        "rules": "Draw a card. Follow the rule. The 4th King drawn must end the game and drink the center cup!",
+        "draw_card": "DRAW CARD",
+        "kings_remaining": "KINGS REMAINING",
+        "game_over": "4TH KING!",
+        "game_over_msg": "You drew the final King. Finish the center cup!",
+        "cards": {
+            "A": {
+                "title": "Waterfall",
+                "desc": "Everyone starts drinking. You can't stop until the person to your right stops."
+            },
+            "2": {
+                "title": "You",
+                "desc": "Point at someone. They drink."
+            },
+            "3": {
+                "title": "Me",
+                "desc": "You drink."
+            },
+            "4": {
+                "title": "Floor",
+                "desc": "Everyone touches the floor. Last one drinks."
+            },
+            "5": {
+                "title": "Guys",
+                "desc": "All guys drink."
+            },
+            "6": {
+                "title": "Chicks",
+                "desc": "All girls drink."
+            },
+            "7": {
+                "title": "Heaven",
+                "desc": "Reach for the sky. Last one drinks."
+            },
+            "8": {
+                "title": "Mate",
+                "desc": "Pick a mate. Every time you drink, they drink."
+            },
+            "9": {
+                "title": "Rhyme",
+                "desc": "Say a word. Go in a circle rhyming. First to mess up drinks."
+            },
+            "10": {
+                "title": "Categories",
+                "desc": "Pick a category (e.g., cars). Go in a circle. First to mess up drinks."
+            },
+            "J": {
+                "title": "Rule Master",
+                "desc": "Make a rule that lasts the whole game. Anyone who breaks it drinks."
+            },
+            "Q": {
+                "title": "Question Master",
+                "desc": "Ask someone a question. If they answer without a question, they drink."
+            },
+            "K": {
+                "title": "King's Cup",
+                "desc": "Pour some of your drink into the center cup."
+            }
+        }
     }
 }
