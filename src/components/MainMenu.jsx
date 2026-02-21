@@ -222,10 +222,10 @@ export const MainMenu = ({ onSelectGame }) => {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.9 }}
                         onClick={() => onSelectGame('bomb31')}
-                        style={{ borderLeft: '6px solid var(--accent-primary)', fontSize: '1.5rem', padding: '1.5rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '0.25rem' }}
+                        style={{ borderLeft: '6px solid var(--accent-primary)', fontSize: 'clamp(1.1rem, 4vw, 1.5rem)', padding: 'clamp(1rem, 3vw, 1.5rem)', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '0.25rem' }}
                     >
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', width: '100%' }}>
-                            <Flame size={32} color="var(--accent-primary)" style={{ filter: 'drop-shadow(0 0 10px var(--accent-primary))' }} />
+                        <div style={{ display: 'flex', alignItems: 'center', gap: 'clamp(0.5rem, 2vw, 1rem)', width: '100%' }}>
+                            <Flame size={28} color="var(--accent-primary)" style={{ filter: 'drop-shadow(0 0 10px var(--accent-primary))', flexShrink: 0 }} />
                             <span style={{ flex: 1, textAlign: 'left', fontWeight: 900, textShadow: '0 0 10px rgba(255,255,255,0.2)' }}>{t('menu.game_31bomb')}</span>
                             <span style={{ fontSize: '0.8rem', background: 'var(--accent-primary)', color: 'black', padding: '0.25rem 0.75rem', borderRadius: '4px', fontWeight: 900 }}>⚡ HYPER</span>
                         </div>
@@ -236,10 +236,10 @@ export const MainMenu = ({ onSelectGame }) => {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.9 }}
                         onClick={() => onSelectGame('nunchitap')}
-                        style={{ borderLeft: '6px solid var(--accent-secondary)', fontSize: '1.5rem', padding: '1.5rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '0.25rem' }}
+                        style={{ borderLeft: '6px solid var(--accent-secondary)', fontSize: 'clamp(1.1rem, 4vw, 1.5rem)', padding: 'clamp(1rem, 3vw, 1.5rem)', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '0.25rem' }}
                     >
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', width: '100%' }}>
-                            <Hand size={32} color="var(--accent-secondary)" style={{ filter: 'drop-shadow(0 0 10px var(--accent-secondary))' }} />
+                        <div style={{ display: 'flex', alignItems: 'center', gap: 'clamp(0.5rem, 2vw, 1rem)', width: '100%' }}>
+                            <Hand size={28} color="var(--accent-secondary)" style={{ filter: 'drop-shadow(0 0 10px var(--accent-secondary))', flexShrink: 0 }} />
                             <span style={{ flex: 1, textAlign: 'left', fontWeight: 900, textShadow: '0 0 10px rgba(255,255,255,0.2)' }}>{t('menu.game_nunchitap')}</span>
                             <span style={{ fontSize: '0.8rem', background: 'var(--accent-secondary)', color: 'black', padding: '0.25rem 0.75rem', borderRadius: '4px', fontWeight: 900 }}>🧊 ICE</span>
                         </div>
@@ -250,10 +250,10 @@ export const MainMenu = ({ onSelectGame }) => {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.9 }}
                         onClick={() => onSelectGame('vibevote')}
-                        style={{ borderLeft: '6px solid var(--accent-warn)', fontSize: '1.5rem', padding: '1.5rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '0.25rem' }}
+                        style={{ borderLeft: '6px solid var(--accent-warn)', fontSize: 'clamp(1.1rem, 4vw, 1.5rem)', padding: 'clamp(1rem, 3vw, 1.5rem)', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '0.25rem' }}
                     >
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', width: '100%' }}>
-                            <Users size={32} color="var(--accent-warn)" style={{ filter: 'drop-shadow(0 0 10px var(--accent-warn))' }} />
+                        <div style={{ display: 'flex', alignItems: 'center', gap: 'clamp(0.5rem, 2vw, 1rem)', width: '100%' }}>
+                            <Users size={28} color="var(--accent-warn)" style={{ filter: 'drop-shadow(0 0 10px var(--accent-warn))', flexShrink: 0 }} />
                             <span style={{ flex: 1, textAlign: 'left', fontWeight: 900, textShadow: '0 0 10px rgba(255,255,255,0.2)' }}>{t('menu.game_vibevote')}</span>
                             <span style={{ fontSize: '0.8rem', background: 'var(--accent-warn)', color: 'black', padding: '0.25rem 0.75rem', borderRadius: '4px', fontWeight: 900 }}>🗣️ ROAST</span>
                         </div>
@@ -264,10 +264,10 @@ export const MainMenu = ({ onSelectGame }) => {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.9 }}
                         onClick={() => onSelectGame('neverhave')}
-                        style={{ borderLeft: '6px solid var(--accent-success)', fontSize: '1.5rem', padding: '1.5rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '0.25rem' }}
+                        style={{ borderLeft: '6px solid var(--accent-success)', fontSize: 'clamp(1.1rem, 4vw, 1.5rem)', padding: 'clamp(1rem, 3vw, 1.5rem)', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '0.25rem' }}
                     >
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', width: '100%' }}>
-                            <Target size={32} color="var(--accent-success)" style={{ filter: 'drop-shadow(0 0 10px var(--accent-success))' }} />
+                        <div style={{ display: 'flex', alignItems: 'center', gap: 'clamp(0.5rem, 2vw, 1rem)', width: '100%' }}>
+                            <Target size={28} color="var(--accent-success)" style={{ filter: 'drop-shadow(0 0 10px var(--accent-success))', flexShrink: 0 }} />
                             <span style={{ flex: 1, textAlign: 'left', fontWeight: 900, textShadow: '0 0 10px rgba(255,255,255,0.2)' }}>{t('menu.game_never_have_i_ever')}</span>
                             <span style={{ fontSize: '0.8rem', background: 'var(--accent-success)', color: 'black', padding: '0.25rem 0.75rem', borderRadius: '4px', fontWeight: 900 }}>⚠️ EXPOSE</span>
                         </div>
@@ -278,10 +278,10 @@ export const MainMenu = ({ onSelectGame }) => {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.9 }}
                         onClick={() => onSelectGame('kingscup')}
-                        style={{ borderLeft: '6px solid #FF3366', fontSize: '1.5rem', padding: '1.5rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '0.25rem', borderColor: 'var(--neon-pink)' }}
+                        style={{ borderLeft: '6px solid var(--neon-pink)', fontSize: 'clamp(1.1rem, 4vw, 1.5rem)', padding: 'clamp(1rem, 3vw, 1.5rem)', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '0.25rem' }}
                     >
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', width: '100%' }}>
-                            <Club size={32} color="var(--neon-pink)" style={{ filter: 'drop-shadow(0 0 10px var(--neon-pink))' }} />
+                        <div style={{ display: 'flex', alignItems: 'center', gap: 'clamp(0.5rem, 2vw, 1rem)', width: '100%' }}>
+                            <Club size={28} color="var(--neon-pink)" style={{ filter: 'drop-shadow(0 0 10px var(--neon-pink))', flexShrink: 0 }} />
                             <span style={{ flex: 1, textAlign: 'left', fontWeight: 900, textShadow: '0 0 10px rgba(255,255,255,0.2)' }}>{t('menu.game_kings_cup')}</span>
                             <span style={{ fontSize: '0.8rem', background: 'var(--neon-pink)', color: 'black', padding: '0.25rem 0.75rem', borderRadius: '4px', fontWeight: 900 }}>💀 FATAL</span>
                         </div>

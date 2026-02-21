@@ -50,7 +50,8 @@ body {
   min-height: 100vh;
   min-height: 100dvh;
   width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   background-color: var(--bg-dark);
   color: var(--text-primary);
   /* Cyber Grain Overlay */
@@ -107,7 +108,7 @@ button {
   cursor: pointer;
   width: 100%;
   max-width: clamp(280px, 80vw, 400px);
-  margin: 0.5rem auto;
+  margin: 0 auto;
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: all 0.2s ease;
