@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://play.mahalohana-bruce.com/sitemap.xml
