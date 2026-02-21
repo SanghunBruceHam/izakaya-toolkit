@@ -143,8 +143,9 @@ export const KingsCup = ({ onBack }) => {
                                         transition={{ type: "spring", stiffness: 150 }}
                                         className="flex-center"
                                         style={{
-                                            width: '280px',
-                                            height: '400px',
+                                            width: 'min(75vw, 300px)',
+                                            aspectRatio: '2.5 / 3.5',
+                                            height: 'auto',
                                             background: '#0a0a0a', /* Black Card */
                                             border: '1px solid rgba(255,255,255,0.2)',
                                             boxShadow: '0 0 30px rgba(255,0,127,0.1), inset 0 0 20px rgba(0,0,0,1)',
@@ -174,7 +175,7 @@ export const KingsCup = ({ onBack }) => {
                                         </div>
                                     </motion.div>
                                 ) : (
-                                    <div style={{ width: '280px', height: '400px', border: '2px dashed rgba(255,255,255,0.1)', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                    <div style={{ width: 'min(75vw, 300px)', aspectRatio: '2.5 / 3.5', height: 'auto', border: '2px dashed rgba(255,255,255,0.1)', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                                         <p style={{ color: 'var(--text-secondary)', fontFamily: "'Space Grotesk', sans-serif", textTransform: 'uppercase', letterSpacing: '2px' }}>NO CARD DRAWN</p>
                                     </div>
                                 )}
