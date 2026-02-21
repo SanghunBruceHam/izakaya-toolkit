@@ -126,14 +126,14 @@ export const Bomb31 = ({ onBack }) => {
                             </motion.h1>
                         </div>
 
-                        <div style={{ display: 'flex', gap: '1rem', width: '100%', marginBottom: '1rem' }}>
-                            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} onClick={() => handleTap(1)} style={{ fontSize: '2.5rem', padding: '1.5rem', background: 'var(--bg-charcoal)', borderColor: 'rgba(255,0,127,0.3)' }}>
+                        <div style={{ display: 'flex', gap: '0.25rem', width: '100%', marginBottom: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+                            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} onClick={() => handleTap(1)} style={{ flex: '1 1 auto', fontSize: 'clamp(1.5rem, 6vw, 2.5rem)', padding: 'clamp(0.75rem, 3vw, 1.5rem)', background: 'var(--bg-charcoal)', borderColor: 'rgba(255,0,127,0.3)' }}>
                                 {t('bomb31.tap_1')}
                             </motion.button>
-                            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} onClick={() => handleTap(2)} style={{ fontSize: '2.5rem', padding: '1.5rem', background: 'var(--bg-charcoal)', borderColor: 'rgba(255,0,127,0.3)' }}>
+                            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} onClick={() => handleTap(2)} style={{ flex: '1 1 auto', fontSize: 'clamp(1.5rem, 6vw, 2.5rem)', padding: 'clamp(0.75rem, 3vw, 1.5rem)', background: 'var(--bg-charcoal)', borderColor: 'rgba(255,0,127,0.3)' }}>
                                 {t('bomb31.tap_2')}
                             </motion.button>
-                            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} onClick={() => handleTap(3)} style={{ fontSize: '2.5rem', padding: '1.5rem', background: 'var(--bg-charcoal)', borderColor: 'rgba(255,0,127,0.3)' }}>
+                            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} onClick={() => handleTap(3)} style={{ flex: '1 1 auto', fontSize: 'clamp(1.5rem, 6vw, 2.5rem)', padding: 'clamp(0.75rem, 3vw, 1.5rem)', background: 'var(--bg-charcoal)', borderColor: 'rgba(255,0,127,0.3)' }}>
                                 {t('bomb31.tap_3')}
                             </motion.button>
                         </div>

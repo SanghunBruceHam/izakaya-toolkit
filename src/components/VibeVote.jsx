@@ -168,11 +168,11 @@ export const VibeVote = ({ onBack }) => {
                             {t('vibevote.next_question')}
                         </button>
 
-                        <div style={{ display: 'flex', gap: '0.5rem', width: '100%' }}>
-                            <button onClick={() => setShowReceipt(true)} style={{ flex: 1, background: 'var(--glass-highlight)', color: 'var(--accent-warn)', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', borderColor: 'rgba(255,234,0,0.3)', fontFamily: "'Space Grotesk', sans-serif" }}>
+                        <div style={{ display: 'flex', gap: '0.5rem', width: '100%', flexWrap: 'wrap' }}>
+                            <button onClick={() => setShowReceipt(true)} style={{ flex: '1 1 auto', minWidth: '150px', background: 'var(--glass-highlight)', color: 'var(--accent-warn)', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', borderColor: 'rgba(255,234,0,0.3)', fontFamily: "'Space Grotesk', sans-serif" }}>
                                 <Share2 size={20} /> Share Result
                             </button>
-                            <button onClick={onBack} style={{ flex: 1, background: 'transparent' }}>
+                            <button onClick={onBack} style={{ flex: '1 1 auto', minWidth: '150px', background: 'transparent' }}>
                                 {t('common.back')}
                             </button>
                         </div>

@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import html2canvas from 'html2canvas';
 import { Share2, Download, X } from 'lucide-react';
@@ -67,6 +67,14 @@ export const ShareReceipt = ({ gameName, stats, onClose }) => {
     const dateString = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
     const timeString = `${String(today.getHours()).padStart(2, '0')}:${String(today.getMinutes()).padStart(2, '0')}`;
 
+    const barcodeLines = useMemo(() => {
+        return Array.from({ length: 30 }).map((_, i) => ({
+            key: i,
+            left: `${i * 3.3}%`,
+            width: `${Math.random() * 3}px`
+        }));
+    }, []);
+
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -132,8 +140,8 @@ export const ShareReceipt = ({ gameName, stats, onClose }) => {
                     </p>
                     <div style={{ marginTop: '1rem', background: '#fff', height: '40px', width: '100%', position: 'relative' }}>
                         {/* Fake Barcode */}
-                        {Array.from({ length: 30 }).map((_, i) => (
-                            <div key={i} style={{ position: 'absolute', top: 0, bottom: 0, left: `${i * 3.3}%`, width: `${Math.random() * 3}px`, background: '#000' }} />
+                        {barcodeLines.map((line) => (
+                            <div key={line.key} style={{ position: 'absolute', top: 0, bottom: 0, left: line.left, width: line.width, background: '#000' }} />
                         ))}
                     </div>
                 </div>

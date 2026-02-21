@@ -94,13 +94,13 @@ export const NeverHaveIEver = ({ onBack }) => {
                             </h2>
                         </div>
 
-                        <div style={{ display: 'flex', gap: '0.5rem', width: '100%' }}>
-                            <button onClick={() => setShowReceipt(true)} style={{ flex: 1, background: 'var(--bg-charcoal)', borderColor: 'rgba(0,240,255,0.3)', color: 'var(--neon-blue)', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', fontFamily: "'Space Grotesk', sans-serif" }}>
+                        <div style={{ display: 'flex', gap: '0.5rem', width: '100%', flexWrap: 'wrap' }}>
+                            <button onClick={() => setShowReceipt(true)} style={{ flex: '1 1 auto', minWidth: '150px', background: 'var(--bg-charcoal)', borderColor: 'rgba(0,240,255,0.3)', color: 'var(--neon-blue)', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', fontFamily: "'Space Grotesk', sans-serif" }}>
                                 <Share2 size={20} /> Share Result
                             </button>
                             <button
                                 onClick={nextQuestion}
-                                style={{ flex: 2, background: 'var(--neon-blue)', color: 'black', fontFamily: "'Space Grotesk', sans-serif" }}
+                                style={{ flex: '2 1 auto', minWidth: '150px', background: 'var(--neon-blue)', color: 'black', fontFamily: "'Space Grotesk', sans-serif" }}
                             >
                                 {t('neverhave.next_prompt')}
                             </button>

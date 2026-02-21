@@ -166,7 +166,7 @@ export const KingsCup = ({ onBack }) => {
 
                                         {/* Center Content */}
                                         <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '0 1rem' }}>
-                                            <h2 style={{ color: 'white', fontSize: '3rem', fontWeight: 900, marginBottom: '1rem', fontFamily: "'Space Grotesk', sans-serif", lineHeight: 1, textTransform: 'uppercase' }}>
+                                            <h2 style={{ color: 'white', fontSize: 'clamp(1.5rem, 8vw, 3rem)', fontWeight: 900, marginBottom: '1rem', fontFamily: "'Space Grotesk', sans-serif", lineHeight: 1, textTransform: 'uppercase' }}>
                                                 {currentCardData.title}
                                             </h2>
                                             <p style={{ color: 'var(--text-secondary)', fontSize: '1.2rem', fontWeight: 400 }}>
