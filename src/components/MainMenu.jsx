@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Globe, Flame, Hand, Users, Target, Club, Share2, Flag, Bomb, Zap, Thermometer, Shuffle, HelpCircle } from 'lucide-react';
 import { useState, useRef, useEffect } from 'react';
+import { AdUnit } from './AdUnit';
 
 export const MainMenu = ({ onSelectGame, afterDark, onToggleAfterDark }) => {
     const { t, i18n } = useTranslation();
@@ -338,6 +339,8 @@ export const MainMenu = ({ onSelectGame, afterDark, onToggleAfterDark }) => {
                     </motion.button>
 
                 </motion.div>
+
+                <AdUnit style={{ marginTop: '2rem' }} />
             </motion.div>
         </div>
     );

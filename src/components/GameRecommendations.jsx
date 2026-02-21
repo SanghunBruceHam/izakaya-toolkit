@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Flame, Hand, Users, Target, Flag, Bomb, Shuffle, Thermometer, HelpCircle } from 'lucide-react';
+import { AdUnit } from './AdUnit';
 
 const GAMES = [
     { key: 'bomb31', Icon: Flame, labelKey: 'menu.game_31bomb', color: 'var(--accent-primary)' },
@@ -38,6 +39,7 @@ export const GameRecommendations = ({ currentGame, onSelectGame }) => {
                     </button>
                 ))}
             </div>
+            <AdUnit />
         </div>
     );
 };

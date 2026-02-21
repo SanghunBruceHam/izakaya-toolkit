@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import html2canvas from 'html2canvas';
 import { Share2, Download, X } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { AdUnit } from './AdUnit';
 
 export const ShareReceipt = ({ gameName, stats, onClose }) => {
     const { t } = useTranslation();
@@ -146,6 +147,8 @@ export const ShareReceipt = ({ gameName, stats, onClose }) => {
                     </div>
                 </div>
             </motion.div>
+
+            <AdUnit style={{ marginTop: '1rem' }} />
 
             {/* Actions */}
             <div style={{ display: 'flex', gap: '1rem', marginTop: '3rem' }}>
