@@ -70,7 +70,7 @@ async function runTest(browser, gameName, testFn) {
         await ss('qa_v2_05_kingscup_draw');
         await tryClick('button:has-text("MENU")', "Back (MENU)");
         await page.waitForTimeout(500);
-        const title = await page.locator('text="BLITZ"').count();
+        const title = await page.locator('text="IGNITE"').count();
         log(title > 0 ? '  ✅ Navigation back to Main Menu: PASS' : '  ❌ Navigation back: FAIL - still on game screen');
     });
 

@@ -27,13 +27,13 @@ export const ShareReceipt = ({ gameName, stats, onClose }) => {
 
                 // Attempt Native Share API if supported (mobile)
                 if (navigator.share && navigator.canShare) {
-                    const file = new File([blob], 'blitz-receipt.png', { type: 'image/png' });
+                    const file = new File([blob], 'ignite-receipt.png', { type: 'image/png' });
                     if (navigator.canShare({ files: [file] })) {
                         try {
                             await navigator.share({
                                 files: [file],
-                                title: 'Blitz Results',
-                                text: 'We just played Blitz! ⚡️'
+                                title: 'Ignite Results',
+                                text: 'We just played Ignite! 🔥'
                             });
                         } catch (err) {
                             console.log('Share cancelled or failed', err);
@@ -57,7 +57,7 @@ export const ShareReceipt = ({ gameName, stats, onClose }) => {
     const fallbackDownload = (blob) => {
         const url = URL.createObjectURL(blob);
         const link = document.createElement('a');
-        link.download = `blitz-${Date.now()}.png`;
+        link.download = `ignite-${Date.now()}.png`;
         link.href = url;
         link.click();
         URL.revokeObjectURL(url);
@@ -115,7 +115,7 @@ export const ShareReceipt = ({ gameName, stats, onClose }) => {
                 <div style={{ position: 'absolute', bottom: '-10px', left: 0, right: 0, height: '10px', background: 'linear-gradient(45deg, #1a1a1a 33.333%, transparent 33.333%, transparent 66.667%, #1a1a1a 66.667%), linear-gradient(-45deg, #1a1a1a 33.333%, transparent 33.333%, transparent 66.667%, #1a1a1a 66.667%)', backgroundSize: '10px 20px' }} />
 
                 <div style={{ textAlign: 'center', borderBottom: '2px dashed #444', paddingBottom: '1rem', marginBottom: '1.5rem' }}>
-                    <h1 style={{ fontFamily: 'monospace', fontSize: '2rem', margin: 0, fontWeight: 900, letterSpacing: '2px', color: '#fff' }}>BLITZ</h1>
+                    <h1 style={{ fontFamily: 'monospace', fontSize: '2rem', margin: 0, fontWeight: 900, letterSpacing: '2px', color: '#fff' }}>IGNITE</h1>
                     <p style={{ fontFamily: 'monospace', color: '#888', margin: '0.5rem 0 0 0', fontSize: '0.8rem' }}>PARTY NIGHT RECEIPT</p>
                     <p style={{ fontFamily: 'monospace', color: '#666', margin: '0.25rem 0 0 0', fontSize: '0.7rem' }}>{dateString} {timeString}</p>
                 </div>

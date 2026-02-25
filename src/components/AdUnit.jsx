@@ -12,14 +12,27 @@ export const AdUnit = ({ slotId, style = {} }) => {
     }, [slotId]);
 
     return (
-        <div style={{ width: '100%', margin: '1rem 0', minHeight: '100px', display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative', background: 'rgba(255,255,255,0.02)', borderRadius: '12px', border: slotId ? 'none' : '1px dashed rgba(255,255,255,0.1)', ...style }}>
+        <div style={{
+            width: '100%',
+            margin: '1.5rem 0',
+            minHeight: '100px',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            position: 'relative',
+            background: 'rgba(255,255,255,0.02)',
+            borderRadius: '12px',
+            border: 'none',
+            overflow: 'hidden', // Prevent ad expansion from breaking layout
+            maxWidth: '100%', // Strict containment
+            ...style
+        }}>
             <ins className="adsbygoogle"
-                style={{ display: 'block', width: '100%', textAlign: 'center' }}
+                style={{ display: 'block', width: '100%', maxWidth: '100%', textAlign: 'center' }}
                 data-ad-client="ca-pub-5508768187151867"
                 data-ad-slot={slotId || "8583724069"}
                 data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
-            {!slotId && <span style={{ position: 'absolute', fontSize: '0.7rem', color: 'var(--text-secondary)' }}>Ad Space (Requires Ad Unit ID)</span>}
+                data-full-width-responsive="false"></ins>
         </div>
     );
 };
